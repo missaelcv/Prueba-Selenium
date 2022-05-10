@@ -8,3 +8,12 @@ let options = new chrome.Options();
 let driver = new Builder().forBrowser('chrome').setChromeOption(options).Builder();
 
 
+async function prueba() { 
+    describe ('Prueba de Integracion',async function() {
+        var tiempo = 1000;
+
+        async function iniciarSesion(){
+            await  await driver.get('http://127.0.0.1:5500/registrodeClientes.html');//colocar aqui la ruta que liveServer provea
+        }
+    })
+}
